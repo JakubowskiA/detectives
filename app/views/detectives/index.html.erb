@@ -1,0 +1,6 @@
+<h1>All Detectives</h1>
+<br>
+<%@detectives.each do |detective|%>
+<h2><%=link_to detective.name, detective_path(detective)%></h2>
+<br>
+<% end %>

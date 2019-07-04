@@ -1,0 +1,16 @@
+<h1>All Cases</h1>
+<br>
+<%# <h2>Search by Detective</h2>
+<%=form_tag(cases_path, method: :get) do%>
+<%# <%=text_field_tag(:search, params[:search])%>
+<%# <%=submit_tag, ("Search")%>
+<%# <%end%> %> %> %> %>
+
+
+
+<h3>
+<%@cases.each do |c|%>
+<%=link_to c.title, case_path(c)%>
+<br>
+<% end %>
+</h3>

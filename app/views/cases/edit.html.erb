@@ -1,0 +1,17 @@
+<h1>Edit Case</h1>
+<br>
+<%=form_for @case do |f|%>
+<%=f.label :title%>
+<%=f.text_field :title%>
+<br>
+<%=f.label :year%>
+<%=f.number_field :year%>
+<br>
+<%=f.label :solved%>
+<%=f.check_box :solved%>
+<br>
+<%=f.label :detective%>
+<%=collection_select(:case, :detective_id, Detective.all, :id, :name, prompt: true)%>
+<br>
+<%=f.submit%>
+<% end %>

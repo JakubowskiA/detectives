@@ -1,0 +1,14 @@
+<h1><%=@detective.name%>'s Page</h1>
+<br>
+<h2><%=@detective.name%>'s Team: <%=@detective.team%></h2>
+<br>
+<h2><%=@detective.name%>'s Home: <%=@detective.home%></h2>
+<br>
+<h2><%=@detective.name%>'s Cases:</h2>
+<br>
+<h3>
+<%@detective.cases.each do |c|%>
+<%=link_to c.title, case_path(c)%>
+<br>
+<% end %>
+</h3>

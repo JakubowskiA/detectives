@@ -1,0 +1,14 @@
+<h1>New Detective</h1>
+<br>
+<%=form_for @detective do |f|%>
+<%=f.label :name%>
+<%=f.text_field :name%>
+<br>
+<%=f.label :team%>
+<%=f.text_field :team%>
+<br>
+<%=f.label :home%>
+<%=f.text_field :home%>
+<br>
+<%=f.submit%>
+<% end %>

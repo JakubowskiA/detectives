@@ -1,0 +1,10 @@
+<h1><%=@case.title%></h1>
+<br>
+<h2>Investigated by: <%=@case.detective.name%></h2>
+<br>
+<h2>Solved? <%=@case.solved%>, <%=@case.year%></h2>
+<br>
+<%=button_to "Edit Case", edit_case_path(@case), :method => :get%>
+<br>
+<%=button_to "Delete Case", @case, :method => :delete%>
+
